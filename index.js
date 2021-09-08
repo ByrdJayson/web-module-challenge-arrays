@@ -181,6 +181,12 @@ Use the filterByWord function below to do the following:
 
 function filterByWord(array, string){
   let copyArray = [...array];
+  let newArray = [];
+  for(let i = 0; i < copyArray.length - 1; i++){
+    if(copyArray[i].includes(string)){
+      newArray.push(copyArray[i]);
+    } 
+  }return newArray
 
   
 
