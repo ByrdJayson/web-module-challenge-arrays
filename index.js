@@ -153,7 +153,7 @@ function removeFlavorByName(array, flavorAsString){
     if(copyArray[i] === flavorAsString) {
       copyArray.splice(i, 1);
       return copyArray
-    }
+    } 
   } 
 }
 
@@ -179,8 +179,11 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(array, string){
+  let copyArray = [...array];
+
+  
+
 }
 
 
