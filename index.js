@@ -107,7 +107,11 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array){
- /*your code here*/
+ const copyArray = [...array];
+ copyArray.pop();
+ for(let i = 0; i < copyArray.length - 1; i++){
+   return copyArray
+ }
 }
 
 
