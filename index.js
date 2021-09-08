@@ -87,8 +87,11 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(array, flavor){
- array.unshift(flavor);
- return console.log((array.length - 1));
+ let copyArray = [...array];
+ copyArray.unshift(flavor);
+ for(let i = 0; i < copyArray.length - 1; i++){
+   return copyArray
+ }
 }
 
 
@@ -103,7 +106,7 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
+function removeLastFlavor(array){
  /*your code here*/
 }
 
