@@ -149,7 +149,12 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(array, flavorAsString){
   let copyArray = [...array];
-  
+  for(let i = 0; i < copyArray.length - 1; i++){
+    if(copyArray[i] === flavorAsString) {
+      copyArray.splice(i, 1);
+      return copyArray
+    }
+  } 
 }
 
 
